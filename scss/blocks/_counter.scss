@@ -56,27 +56,5 @@
     &__title {
         @include text($font, 400, 16px, 20px, $color-text-secondary);
     }
-    &__circle {
-        z-index: 1;
-        position: absolute;
-        border-radius: 50%;
-        @include desktop-small {
-            display: none;
-        }
-        &._big {
-            width: 288px;
-            height: 288px;
-            background: $color-grad-primary;
-            left: -206px;
-            top: 20px;
-        }
-        &._small {
-            width: 86px;
-            height: 86px;
-            background: $color-grad-secondary;
-            bottom: -136px;
-            left: 0;
-
-        }
-    }
+    
 }

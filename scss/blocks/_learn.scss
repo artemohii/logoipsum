@@ -1,0 +1,117 @@
+.learn {
+    margin-bottom: 120px;
+    position: relative;
+
+    // .learn__title
+
+    &__title {
+        @include text($font-secondary, 700, 46px, 56px, #001A49);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    // .learn__desc
+
+    &__desc {
+        @include text($font, 400, 20px, 30px, #4F596A);
+        text-align: center;
+        width: 650px;
+        margin: 0 auto 60px;
+    }
+
+    // .learn__list
+
+    &__list {
+        
+
+    }
+
+    // .learn__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #FBF3FFFF;
+        border-radius: 21px;
+        padding: 40px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .learn__left
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    // .learn__img
+
+    &__img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: url(./img/learn.svg) center no-repeat, $color-white;
+
+    }
+
+    // .learn__info
+
+    &__info {
+    }
+
+    // .learn__profession
+
+    &__profession {
+        @include text($font-secondary, 700, 24px, 24px, #001A49);
+        margin-bottom: 20px;
+    }
+
+    // .learn__proffession-desc
+
+    &__proffession-desc {
+        @include text($font, 500, 16px, 24px, #001A49);
+        width: 500px;
+    }
+
+    // .learn__right
+
+    &__right {
+        display: flex;
+        background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+        border-radius: 33px;
+        @include text($font, 600, 16px, 20px, $color-white);
+        padding: 5px 0;
+
+    }
+
+    // .learn__videos
+
+    &__videos {
+        border-right: 1px solid #8639B5;
+        padding: 18px 38px;
+    }
+
+    // .learn__hours
+
+    &__hours {
+        padding: 18px 38px;
+    }
+    /* &__circle{
+        z-index: 1;
+        position: absolute;
+        //border-radius: 50%;
+        @include desktop-small {
+            display: none;
+        }
+        //width: 268px;
+        //height: 383px;
+        //background: $color-grad-secondary;
+        right: -170px;
+        top: -150px;
+            } */
+}

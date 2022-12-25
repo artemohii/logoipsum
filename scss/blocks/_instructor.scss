@@ -1,0 +1,42 @@
+.instructor {
+    margin-bottom: 137px;    
+    
+    &__body {
+        margin-bottom: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
+    // .instructor__info
+
+    &__info {
+        width: 537px;
+        cursor: default;
+    }
+
+    // .instructor__title
+
+    &__title {
+        @include text($font-secondary, 700, 46px, 56px, $color-text-primary);
+        margin-bottom: 20px;
+    }
+
+    // .instructor__desc
+
+    &__desc {
+        @include text($font, 400, 20px, 30px, $color-text-secondary);
+    }
+
+    // .instructor__avatar
+
+    &__avatar {
+        width: 354px;
+        height: 354px;
+        background: url(./img/instructor.png) no-repeat center, $color-grad-primary;
+        background-size: 107%;
+        border-radius: 50%;
+    }
+}
