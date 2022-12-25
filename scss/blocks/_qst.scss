@@ -1,0 +1,60 @@
+.qst {
+    margin-bottom: 120px;
+
+    // .qst__wrapper
+
+    &__wrapper {
+    }
+
+    // .qst__title
+
+    &__title {
+    }
+
+    // .qst__list
+
+    &__list {
+    }
+    // .qst__body
+
+    &__body {
+        display: none;
+    }
+    // .qst__item
+
+    &__item {
+        &._active {
+            .qst__body {
+                display: block;
+            }
+            .item__arrow {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    // .qst__header
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    
+}
+.item {
+
+    // .item__title
+
+    &__title {
+    }
+
+    // .item__arrow
+
+    &__arrow {
+        transition: $transition;
+    }
+}

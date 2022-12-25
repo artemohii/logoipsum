@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>logoipsum</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Mulish:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body id="body">
+		<header class="header">
+			<div class="container header__wrapper">
+			<a href="#" class="header__logo">
+				<img src="./img/logo.svg" alt="Logoipsum">
+			</a>
+			<div class="header__burger">
+				<span id="icon-menu" onclick="navToggle()" class="material-icons _active">
+					menu
+				</span>
+			</div>
+			<nav id="nav" class="header-nav">
+				<ul class="header-nav__ul">
+					<div class="header-nav__row">
+						<li class="header-nav__li">
+							<a href="#" class="header-nav__a _active">Course topics</a>
+						</li>
+						<li class="header-nav__li">
+							<a href="#" class="header-nav__a">What students say</a>
+						</li>
+					</div>
+					<div class="header-nav__row">
+						<li class="header-nav__li">
+							<a href="#" class="header-nav__a">Sign in</a>
+						</li>
+						<li class="header-nav__li">
+							<a href="#" class="btn btn_primary">Get started</a>
+						</li>
+					</div>
+				</ul>
+				<span id="icon-close" onclick="navToggle()" class="material-icons">
+					close
+				</span>
+			</nav>
+				
+			</div>
+			
+			
+		</header>
+		<section class="main-screen">
+			<div class="container main-screen__container">
+				<div class="main-screen__info">
+					<h1 class="main-screen__title">Learn no-code tools today.</h1>
+					<p class="main-screen__desc">Create beautiful webflow sites with flowbase. Clone for
+					free and get started building a site today.</p>
+					<a href="#" class="main-screen__btn btn btn_primary">Get started</a>
+					<div class="students">
+						<div class="students__list">
+							<div class="students__img">
+								<img src="./img/user-1.png" alt="user">
+							</div>
+							<div class="students__img">
+								<img src="./img/user-2.png" alt="user">
+							</div>
+							<div class="students__img">
+								<img src="./img/user-3.png" alt="user">
+							</div>
+						</div>
+						<div class="students__text">
+							Join over <span>4,000+</span> students
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-screen__video">
+				<img src="./img/video.png" alt="">
+			</div>
+
+		</section>
+		<section class="counter container">
+			<div class="counter__wrapper">
+				<div class="counter__item">
+					<div class="counter__amount">12,201</div>
+					<div class="counter__title">happy students</div>
+				</div>
+				<div class="counter__item">
+					<div class="counter__amount">3,291</div>
+					<div class="counter__title">lectures</div>
+				</div>
+				<div class="counter__item">
+					<div class="counter__amount">1,291</div>
+					<div class="counter__title">5 star reviews</div>
+				</div>
+			</div>
+			<div class="counter__circle _big"></div>
+			<div class="counter__circle _small"></div>
+		</section>
+		<section class="learn">
+			<div class="container">
+
+			</div>
+		</section>
+		<section class="qst">
+			<div class="container qst__wrapper">
+				<div class="qst__title">Frequently asked questions</div>
+				
+				<div class="qst__list">
+					<div id="item1" onclick="toggleItem('item1')" class="qst__item item" >
+						<div class="qst__header">
+							<div class="item__title">Will I get full access to the course after purchasing?</div>
+							<div class="item__arrow">
+								<img src="./img/arrow.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="qst__body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="script.js">
+		</script>
+</body>
+
+</html>
