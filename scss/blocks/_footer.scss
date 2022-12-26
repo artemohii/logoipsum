@@ -1,0 +1,125 @@
+.footer {
+    background: #FBF3FFFF;
+    padding: 63px 0 80px;
+
+    // .footer__top
+
+    &__top {
+        display: flex;
+        align-items: center;
+        //justify-content: space-between;
+        gap: 80px;
+        margin-bottom: 50px;
+
+    }
+
+    // .footer__logo
+
+    &__logo {
+        @include tablet-small {
+            display: none;
+        }
+    }
+
+    // .footer__input
+
+    &__input {
+        background: $color-white;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.0501257);
+        border-radius: 33px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding-right: 8px;
+
+
+        
+    }
+    &__text {
+        padding: 23px 32px;
+        border-radius: 33px;
+        width: 100%;
+        @include text($font-secondary, 400, 16px, 20px, $color-text-secondary);
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        border: 1px solid transparent;
+        
+
+
+
+    }
+    &__submit {
+
+
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+        cursor: pointer;
+    }
+
+    // .footer__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 40px;
+        align-items: end;
+        @include mobile {
+            grid-template-columns: 1fr ;
+        align-items: center;
+
+
+        }
+        
+    }
+
+    // .footer__item
+    &__item {
+        @include mobile {
+                    width: 145px;
+        }
+
+    }
+    &__item:nth-of-type(2) {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: end */
+        //align-self: end;
+    }
+
+    // .footer__title
+
+    &__title {
+        @include text($font, 400, 16px, 18px, $color-text-primary);
+        margin-bottom: 20px;
+        transition: $transition;        
+    }
+    &__title:hover, &__link:hover {
+        color: #C00DFFFF ;
+        
+    }
+
+    // .footer__link
+
+    &__link {
+        transition: $transition;        
+        @include text($font, 400, 16px, 20px, $color-text-secondary);
+    }
+    &__link:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+}
+    
+
+input {
+    border: none;
+    outline: none;
+}
+input:focus  {
+    border: 1px solid #C00DFFFF;
+}

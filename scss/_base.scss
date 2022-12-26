@@ -26,6 +26,7 @@ li {
   padding: 0 20px;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 img {
   max-width: 100%;
@@ -37,7 +38,7 @@ img {
   @include text($font, 700, 16px, 20px, $color-white);
   border-radius: 33px;
   padding: 15px 30px;
-  border: 0;
+  border: 1px solid transparent;
   outline: 0;
   display: inline-block;
   cursor: pointer;
@@ -45,6 +46,10 @@ img {
   &_primary {
     background: $color-grad-primary;
     &:hover {
+      border: 1px solid $color-text-primary;
+      background: transparent;
+      color: $color-text-primary;
+
         //transform: scale(1.03);
       //background: $color-text-primary;
     }
@@ -72,4 +77,10 @@ img {
       left: 0;
 
   }
+}
+
+.title {
+  cursor: default;
+  @include text($font-secondary, 700, 46px, 56px, $color-text-primary);
+
 }

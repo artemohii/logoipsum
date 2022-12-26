@@ -1,0 +1,30 @@
+.ready {
+    max-width: 640px;
+    text-align: center;
+    margin: 0 auto 120px;
+
+    // .ready__guarantee
+
+    &__guarantee {
+        @include text($font, 700, 12px, 15px, #C00DFFFF);
+        padding: 8px 35px;
+        background: #FFF0E4FF;
+        mix-blend-mode: normal;
+        border-radius: 33px;
+        letter-spacing: 2.57143px;
+        text-transform: uppercase;
+        margin-bottom: 57px;
+        cursor: default;
+    }
+
+    // .ready__title
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    // .ready__btn
+
+    &__btn {
+    }
+}

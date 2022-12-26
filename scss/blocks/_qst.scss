@@ -9,20 +9,32 @@
     // .qst__title
 
     &__title {
+        margin-bottom: 60px;
+        text-align: center;
     }
 
     // .qst__list
 
     &__list {
     }
+    
     // .qst__body
 
-    &__body {
+    &__body{
+        @include text($font-secondary, 400, 16px, 26px, $color-text-secondary);
         display: none;
+        max-width: 730px;
+        cursor: default;
     }
+    
+    
     // .qst__item
 
     &__item {
+        border: 1px solid rgb(244, 222, 255);
+        border-radius: 21px;
+        padding: 40px;
+        margin-bottom: 20px;
         &._active {
             .qst__body {
                 display: block;
@@ -39,8 +51,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px;
         cursor: pointer;
+        @include mobile {
+            gap: 30px
+        }
     }
 
     
@@ -50,11 +64,23 @@
     // .item__title
 
     &__title {
+        @include text($font-secondary, 700, 20px, 24px, $color-text-secondary);
+        @include mobile {
+            margin-bottom: 10px;
+        }
     }
 
     // .item__arrow
 
     &__arrow {
         transition: $transition;
+        background: url(./img/arrow2.svg) center no-repeat, #FFF0E4FF /* linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%) */;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        @include mobile {
+            align-self: start;
+            background: url(./img/arrow2.svg) center no-repeat;
+        }
     }
 }

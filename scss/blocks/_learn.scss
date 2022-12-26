@@ -5,7 +5,7 @@
     // .learn__title
 
     &__title {
-        @include text($font-secondary, 700, 46px, 56px, #001A49);
+        color: #001A49;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -15,7 +15,7 @@
     &__desc {
         @include text($font, 400, 20px, 30px, #4F596A);
         text-align: center;
-        width: 650px;
+        max-width: 650px;
         margin: 0 auto 60px;
     }
 
@@ -38,6 +38,11 @@
         &:not(:last-child) {
             margin-bottom: 30px;
         }
+        @include tablet {
+            flex-direction: column;
+            gap: 50px;
+    
+            }
     }
 
     // .learn__left
@@ -46,14 +51,16 @@
         display: flex;
         align-items: center;
         gap: 30px;
+        cursor: default;
+        
 
     }
 
     // .learn__img
 
     &__img {
-        width: 64px;
-        height: 64px;
+        max-width: 64px;
+        max-height: 64px;
         border-radius: 50%;
         background: url(./img/learn.svg) center no-repeat, $color-white;
 
@@ -75,12 +82,13 @@
 
     &__proffession-desc {
         @include text($font, 500, 16px, 24px, #001A49);
-        width: 500px;
+        max-width: 500px;
     }
 
     // .learn__right
 
     &__right {
+        cursor: pointer;
         display: flex;
         background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
         border-radius: 33px;
@@ -94,12 +102,19 @@
     &__videos {
         border-right: 1px solid #8639B5;
         padding: 18px 38px;
+        @include mobile {
+            padding: 18px 30px;
+        }
+        
     }
 
     // .learn__hours
 
     &__hours {
         padding: 18px 38px;
+        @include mobile {
+            padding: 18px 30px;
+        }
     }
     /* &__circle{
         z-index: 1;
