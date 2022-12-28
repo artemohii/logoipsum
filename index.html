@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>logoipsum</title>
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet"  href="owl.carousel.css">
+	<link rel="stylesheet"  href="owl.theme.default.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Mulish:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -182,13 +184,14 @@ free and get started building a site today.
 				</div>
 			</div>
 		</section>
-		<section class="say">
+		<div class="say">
+			<div class="say__title title">What my students say</div>
+			<div class="say__desc">Create custom landing pages with Shades that convert more visitors than any website—no coding required.</div>
+				
 			<div class="container">
-				<div class="say__title title">What my students say</div>
-				<div class="say__desc">Create custom landing pages with Shades that convert more visitors than any website—no coding required.</div>
-				<div class="say__list">
+				<div class="owl-carousel owl-theme say__list ">
 					<div class="say__item">
-						<div class="say__text">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</div>
+						<div class="say__text">“1 waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</div>
 						<div class="say__man">
 							<div class="say__img">
 								<img src="./img/user-1.png" alt="user">
@@ -200,7 +203,7 @@ free and get started building a site today.
 						</div>
 					</div>
 					<div class="say__item">
-						<div class="say__text">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</div>
+						<div class="say__text">“2 waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</div>
 						
 						<div class="say__man">
 							<div class="say__img">
@@ -212,9 +215,25 @@ free and get started building a site today.
 							</div>
 						</div>
 					</div>
-				</div>
+					<div class="say__item">
+						<div class="say__text">“3 waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</div>
+						
+						<div class="say__man">
+							<div class="say__img">
+								<img src="./img/user-1.png" alt="user">
+							</div>
+							<div class="say__staff">
+								<div class="say__name">Henk Fortuin</div>
+								<div class="say__proff">Founder of Crips</div>
+							</div>
+						</div>
+					</div>
 			</div>
-		</section>
+
+					
+					
+				</div>
+	</div>
 		<section class="qst">
 			<div class="container qst__wrapper">
 				<div class="qst__title title">Frequently asked questions</div>
@@ -316,5 +335,13 @@ free and get started building a site today.
 		<script src="script.js">
 		</script>
 </body>
+<script
+src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+crossorigin="anonymous"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="index.js"></script>
+<script src="script.js">
+</script>
 
 </html>

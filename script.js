@@ -11,3 +11,4 @@ function toggleItem(id) {
   var item = document.getElementById(id);
   item.classList.toggle("_active");
 }
+
